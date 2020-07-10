@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Session</title>
+    <meta charset="UTF-8" />
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+	 <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body style="background-color:grey">
+    <div id="app"></div>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById("app");
+	 const element=(
+      <div style={
+	  {
+	  backgroundColor:"coral",
+	  margin:"-15px -10px",
+	  height:"300px",
+	  width:"800px",
+	  position:"relative"
+	  }}>
+        <ul>
+        <li style={{ display: "inline",color:"white"}}>PIXEL GEEK</li>
+		 <li style={{ display: "inline",color:"white",padding:" 10px 40px"}}>VIDEOS</li>
+		 <li style={{ display: "inline",color:"white",paddingLeft:"40px"}}>RAMBLES</li>
+		 <li style={{ display: "inline",color:"white",paddingLeft:"40px"}}>PROJECTS</li>
+		 <li style={{ display: "inline",color:"white",paddingLeft:"40px"}}>THE OVERFLOW</li>
+  		</ul>
+	<div style={
+	{
+	backgroundColor:"white",
+	margin:"50px 60px",
+    height:"700px",
+	width:"900px"
+	}}>
+	<h1 style={{color:"orange",paddingLeft:"40px"}}>Rejection is hard</h1>
+	<hr style={
+	{
+       width: "550px",
+       margin: "20px 25px",
+       color: "black",
+    }}>
+	</hr>
+	<p style={{color:"grey",paddingLeft:"40px"}}>FEBRUARY 12,2019</p>
+	<p style={{color:"grey",paddingLeft:"40px",width:"500px",fontSize:"21px"}}>We are taught rejection at an early age when we want to do
+         something or get something and our parents say "no".</p>
+	<p style={{color:"grey",paddingLeft:"40px",fontSize:"21px",color:"grey"}}>Rejection are also happens when:</p>
+	<ul style={{marginLeft:"20px",fontSize:"21px",width:"600px",color:"grey"}}>
+	<li style={{marginLeft:"20px",fontSize:"21px",width:"600px",color:"grey"}}>we are aiming for a certain grade in school and we don't get it.</li>
+	<li style={{marginLeft:"20px",fontSize:"21px",width:"600px",color:"grey"}}>you want a boyfriend or girlfriend and he/she says "no.i don't like you in that way".</li>
+	<li style={{marginLeft:"20px",fontSize:"21px",width:"600px",color:"grey"}}>you go through an interview process for a job and you don't get  the position.</li>
+	<li style={{marginLeft:"20px",fontSize:"21px",width:"600px",color:"grey"}}>when you work so hard to get a client and your proposal gets  rejected.</li>
+	</ul>
+	<p style={{color:"grey",paddingLeft:"40px",fontSize:"21px",width:"500px"}}>At the root of it all,we all want something so bad and when life says no,you can't have it ,we get mad and either take it out on someone
+	 else,something else or worse,ourselves.</p>
+	<p style={{color:"grey",paddingLeft:"40px",fontSize:"21px"}}>Rejection is part of life and its ok to be rejected</p>
+    </div>
+	</div>
+      );
+     
+      
+      ReactDOM.render(element, rootElement);
+
+    </script>
+  </body>
+</html>
